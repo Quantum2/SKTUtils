@@ -31,15 +31,15 @@ import SpriteKit
 open class SKTEffect {
   unowned var node: SKNode
   var duration: TimeInterval
-  public var timingFunction: ((CGFloat) -> CGFloat)?
+  open var timingFunction: ((CGFloat) -> CGFloat)?
 
-  public init(node: SKNode, duration: TimeInterval) {
+  open init(node: SKNode, duration: TimeInterval) {
     self.node = node
     self.duration = duration
     timingFunction = SKTTimingFunctionLinear
   }
 
-  public func update(_ t: CGFloat) {
+  open func update(_ t: CGFloat) {
     // subclasses implement this
   }
 }
