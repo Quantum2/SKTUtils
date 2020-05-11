@@ -28,7 +28,7 @@ import SpriteKit
  * Unfortunately, SKAction does not have a concept of a timing function, so
  * we need to replicate the actions using SKTEffect subclasses.
  */
-public class SKTEffect {
+open class SKTEffect {
   unowned var node: SKNode
   var duration: TimeInterval
   public var timingFunction: ((CGFloat) -> CGFloat)?
