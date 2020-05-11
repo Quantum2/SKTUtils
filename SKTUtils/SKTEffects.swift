@@ -29,11 +29,11 @@ import SpriteKit
  * we need to replicate the actions using SKTEffect subclasses.
  */
 open class SKTEffect {
-  unowned var node: SKNode
+  open unowned var node: SKNode
   var duration: TimeInterval
   open var timingFunction: ((CGFloat) -> CGFloat)?
 
-  open init(node: SKNode, duration: TimeInterval) {
+  public init(node: SKNode, duration: TimeInterval) {
     self.node = node
     self.duration = duration
     timingFunction = SKTTimingFunctionLinear
