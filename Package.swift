@@ -5,6 +5,9 @@ import PackageDescription
 
 let package = Package(
     name: "SKTUtils",
+    platforms: [
+        .watchOS(.v3)
+    ],
     products: [
         .library(
             name: "SKTUtils",
